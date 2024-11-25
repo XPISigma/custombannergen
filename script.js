@@ -169,26 +169,6 @@ function randomizeBannerColor() {
   colorPicker.value = randomColor;
 }
 
-function copyBannerToClipboard() {
-  html2canvas(banner).then((canvas) => {
-    // Convert the canvas to a Blob
-    canvas.toBlob(function (blob) {
-      // Create a new ClipboardItem with the image Blob
-      const clipboardItem = new ClipboardItem({
-        "image/png": blob
-      });
-      // Write to the clipboard
-      navigator.clipboard
-        .write([clipboardItem])
-        .then(() => {
-          alert("Banner image copied to clipboard!");
-        })
-        .catch((err) => {
-          console.error("Error copying image to clipboard: ", err);
-        });
-    }, "image/png");
-  });
-}
 const initialColor = getRandomColor();
 banner.style.backgroundColor = initialColor;
 colorPicker.value = initialColor;
