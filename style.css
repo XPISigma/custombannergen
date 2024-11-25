@@ -6,6 +6,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-width: 100px;
   margin: 0;
 }
 
@@ -14,8 +15,8 @@ h1 {
 }
 
 .banner {
-  width: 600px;
-  height: 100px;
+  width: 60vw;
+  height: 10vw;
   background-color: #f0f0f0;
   display: flex;
   align-items: center;
@@ -25,26 +26,26 @@ h1 {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0);
   outline: 4px solid white;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .banner::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: 70%;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0);
-  clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%);
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skew(-30deg);
 }
-
 .emblem {
   height: 60%;
   width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
+  font-size: 7vw;
   color: white;
   margin-left: 20px;
 }
@@ -80,4 +81,18 @@ h1 {
   width: 40px;
   height: 40px;
   cursor: pointer;
+}
+
+#bannerText {
+  padding-left: 1.5vw;
+  font-size: 5.5vw;
+  font-weight: bold;
+  color: white;
+}
+
+#textInput {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  padding: 5px;
+  border-radius: 5px;
 }
