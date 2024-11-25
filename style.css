@@ -81,6 +81,7 @@ h1 {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 #bannerText {
@@ -93,6 +94,26 @@ h1 {
 #textInput {
   font-size: 18px;
   font-family: "Exo 2", sans-serif;
-  padding: 5px;
   border-radius: 5px;
+  padding: 6px 5px;
+  margin-top: 4px;
+}
+.icon-list {
+  width: 60%;
+  overflow-x: auto;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  max_width: 60vw;
+}
+
+.icon-list i {
+  font-size: 30px;
+  margin: 3px;
+  cursor: pointer;
+  color: white;
 }
