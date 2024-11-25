@@ -61,7 +61,95 @@ const iconClasses = [
   "fa-truck",
   "fa-snowflake",
   "fa-umbrella",
-  "fa-fighter-jet"
+  "fa-fighter-jet",
+  // Animals
+  "fa-horse",
+  "fa-frog",
+  "fa-spider",
+  "fa-dove",
+  "fa-dragon",
+  "fa-hippo",
+  "fa-otter",
+  "fa-kiwi-bird",
+  "fa-cat",
+
+  // Objects
+  "fa-gem",
+  "fa-ring",
+  "fa-crown",
+  "fa-magic",
+  "fa-hat-wizard",
+  "fa-dungeon",
+  "fa-bomb",
+  "fa-poo",
+  "fa-skull",
+  "fa-ghost",
+
+  // User Interface
+  "fa-address-book",
+  "fa-address-card",
+  "fa-badge",
+  "fa-bell",
+  "fa-bookmark",
+  "fa-calendar",
+  "fa-chart-bar",
+  "fa-comment",
+  "fa-comments",
+  "fa-envelope",
+  "fa-eye",
+  "fa-flag",
+  "fa-image",
+  "fa-images",
+  "fa-inbox",
+  "fa-map",
+  "fa-paper-plane",
+  "fa-phone",
+  "fa-search",
+  "fa-star",
+  "fa-user",
+  "fa-users",
+
+  // Editing
+  "fa-align-center",
+  "fa-align-justify",
+  "fa-align-left",
+  "fa-align-right",
+  "fa-bold",
+  "fa-clipboard",
+  "fa-copy",
+  "fa-cut",
+  "fa-eraser",
+  "fa-file",
+  "fa-file-alt",
+  "fa-font",
+  "fa-indent",
+  "fa-italic",
+  "fa-link",
+  "fa-list",
+  "fa-list-alt",
+  "fa-list-ol",
+  "fa-list-ul",
+  "fa-outdent",
+  "fa-paste",
+  "fa-pencil-alt",
+  "fa-print",
+  "fa-quote-left",
+  "fa-quote-right",
+  "fa-redo",
+  "fa-save",
+  "fa-strikethrough",
+  "fa-subscript",
+  "fa-superscript",
+  "fa-table",
+  "fa-text-height",
+  "fa-text-width",
+  "fa-th",
+  "fa-th-large",
+  "fa-th-list",
+  "fa-trash",
+  "fa-trash-alt",
+  "fa-underline",
+  "fa-undo"
 ];
 
 function getRandomColor() {
@@ -231,3 +319,12 @@ document.addEventListener("DOMContentLoaded", () => {
     console.error("Copy button not found!");
   }
 });
+
+//new stuff
+const textInput = document.getElementById("textInput");
+const bannerText = document.getElementById("bannerText");
+
+textInput.addEventListener("input", () => {
+  bannerText.textContent = textInput.value;
+});
+emblemIcon.className = "fas fa-pencil-alt";
