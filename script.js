@@ -308,3 +308,20 @@ textInput.addEventListener("input", () => {
   bannerText.textContent = textInput.value;
 });
 emblemIcon.className = "fas fa-pencil-alt";
+
+const iconContainer = document.getElementById("iconContainer");
+
+// Function to create icon elements
+function createIconElements() {
+  iconClasses.forEach((iconClass) => {
+    const iconElement = document.createElement("i");
+    iconElement.className = `fas ${iconClass}`;
+    iconElement.addEventListener("click", () => {
+      emblemIcon.className = iconElement.className;
+    });
+    iconContainer.appendChild(iconElement);
+  });
+}
+
+// Call the function to create the icons when the page loads
+createIconElements();
